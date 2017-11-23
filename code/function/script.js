@@ -9,9 +9,11 @@ const myFunction = () => {
     }).then((json) => {
       document.getElementById("cityHeading").innerHTML = json.name
       document.getElementById("celciusCondition").innerHTML = json.main.temp_max + "°C, " + json.weather[0].description
-      // Creating the url string for the weather image
-      // const urlWeatherImage = ('url("http://openweathermap.org/img/w/${json.weather[0].icon}.png")')
-      // document.body.style.backgroundImage = urlWeatherImage
+      if (json.main.temp_max > 12) {
+        document.getElementById('box').style.background = "orange"
+      }else {
+        document.getElementById('box').style.background = "lightblue"
+      }
       const sunriseToday = new Date(json.sys.sunrise * 1000)
       const sunsetToday = new Date(json.sys.sunset * 1000)
       document.getElementById("sunrise").innerHTML = "Sunrise today at " + sunriseToday.toTimeString()
@@ -19,7 +21,13 @@ const myFunction = () => {
     }
   )
 }
-// const urlWeatherImage = "url(" + "'" + "http://openweathermap.org/img/w/" + json.weather[0].icon + ".png" + "')"
-// const urlWeatherImage = ('url("http://openweathermap.org/img/w/${json.weather[0].icon}.png")')
+
 window.onload = myFunction;
 document.getElementById("citySelection").addEventListener("change", myFunction);
+
+
+// const urlWeatherImage = "url(" + "'" + "http://openweathermap.org/img/w/" + json.weather[0].icon + ".png" + "')"
+// const urlWeatherImage = ('url("http://openweathermap.org/img/w/${json.weather[0].icon}.png")')
+// Creating the url string for the weather image
+// const urlWeatherImage = ('url("http://openweathermap.org/img/w/${json.weather[0].icon}.png")')
+// document.body.style.backgroundImage = urlWeatherImage
