@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Bitter', serif;
+}
+
+/*body {
+  background-color: #bb7854;
+}*/
+
+.cold {
+  background-color: lightblue;
+}
+.lagom {
+  background-color: lightgreen;
+}
+.warm {
+  background-color: orange;
+}
+
+.container-dashboard {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.dashboard {
+  text-align: center;
+  background: navy;
+  margin: 0;
+  padding: 5%;
+  color: white;
+  text-transform: capitalize;
+  z-index: 1;
+}

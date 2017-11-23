@@ -1,0 +1,22 @@
+body {
+  background-color: lightblue;
+}
+
+h1, h2, h3, p {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+#citySelection {
+  display: block;
+  margin: auto;
+}
+
+.wrapper {
+  background-color: navy;
+  color: white;
+  text-transform: capitalize;
+  font-family: 'Bitter', serif;
+  margin: 5% 20%;
+}
