@@ -1,11 +1,11 @@
-* {
+/* {
   box-sizing: border-box;
   font-family: 'Bitter', serif;
 }
 
 /*body {
   background-color: #bb7854;
-}*/
+}
 
 .cold {
   background-color: lightblue;
@@ -33,4 +33,4 @@
   color: white;
   text-transform: capitalize;
   z-index: 1;
-}
+}*/
