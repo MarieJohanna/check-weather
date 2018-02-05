@@ -1,6 +1,6 @@
 const myFunction = () => {
 
- const fetchCity = "http://api.openweathermap.org/data/2.5/weather?q=" + document.getElementById("citySelection").value + "&units=metric&APPID=a0e04c8ab0e494d9a44f8ea9ec9a17a2"
+ const fetchCity = "https://api.openweathermap.org/data/2.5/weather?q=" + document.getElementById("citySelection").value + "&units=metric&APPID=a0e04c8ab0e494d9a44f8ea9ec9a17a2"
 
  fetch(fetchCity)
   .then(
